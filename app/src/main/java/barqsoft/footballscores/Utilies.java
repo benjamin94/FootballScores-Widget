@@ -14,12 +14,12 @@ public class Utilies
     {
         switch (league_num)
         {
-            case SERIE_A : return "Seria A";
-            case PREMIER_LEGAUE : return "Premier League";
-            case CHAMPIONS_LEAGUE : return "UEFA Champions League";
-            case PRIMERA_DIVISION : return "Primera Division";
-            case BUNDESLIGA : return "Bundesliga";
-            default: return "Not known League Please report";
+            case SERIE_A : return App.getContext().getResources().getString(R.string.SERIAA);
+            case PREMIER_LEGAUE : return App.getContext().getResources().getString(R.string.PREMIER_LEGAUE);
+            case CHAMPIONS_LEAGUE : return App.getContext().getResources().getString(R.string.CHAMPIONS_LEAGUE);
+            case PRIMERA_DIVISION : return App.getContext().getResources().getString(R.string.PRIMERA_DIVISION);
+            case BUNDESLIGA : return App.getContext().getResources().getString(R.string.BUNDESLIGA);
+            default: return App.getContext().getResources().getString(R.string.DEFAULT);
         }
     }
     public static String getMatchDay(int match_day,int league_num)
